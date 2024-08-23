@@ -1,0 +1,20 @@
+body{
+    background: linear-gradient(to bottom red,black);
+    font-family: "Exo 2", sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon{  
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.menu{
+    margin: 8px;
+}
+

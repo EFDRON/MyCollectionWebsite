@@ -1,0 +1,42 @@
+/* Basic styling for the navigation bar */
+nav{  
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(1, 1, 95);
+    width: 100%;
+    top: 0px;
+    left: 0;
+    z-index: 100000; 
+    align-items: center;
+    font-weight: bold;
+}
+
+
+
+nav .menu {
+    display: flex;
+    gap: 15px;
+    margin-left: 20px;
+}
+
+nav .menu a {
+    color: white;
+    text-decoration: none;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+
+
+nav .menu a:hover::after,
+nav .menu a.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color:rgb(91, 0, 86) ; /* Underline color */
+}
+

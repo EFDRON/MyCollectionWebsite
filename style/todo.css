@@ -1,0 +1,97 @@
+.my-todo{
+    height: 500px;
+    width: 1025px;
+    border: 4px solid #000000;
+    padding: 10px;
+    
+    border-radius: 8px;
+    background: linear-gradient(to bottom,rgb(244, 5, 5),rgb(78, 9, 0));
+    
+   
+    
+}
+.head{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 410px 410px 200px;
+    place-items: center;
+
+}
+.the-input{
+    height: 35px;
+    background-color: transparent;
+    border: 3px solid black;
+    margin: 8px;
+    color: black;
+    border-radius: 5px;
+    width: 330px;
+    padding: 8px;
+    font-size: 20px;
+    
+
+}
+.the-input::placeholder{
+    color: black;
+    font-size: 20px;
+}
+.my-Add-button{
+    background: linear-gradient(to bottom, rgb(0, 0, 56),rgb(113, 0, 113));
+    width: 100px;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-family: cursive;
+    cursor: pointer;
+}
+.my-Add-button:hover{
+    opacity: 0.8;
+    box-shadow: 0px 0px 2px 2px black;
+}
+.my-Add-button:active{
+    opacity: 0.5;
+}
+.deleteButton{
+    background: linear-gradient(to bottom, rgb(0, 0, 56),rgb(113, 0, 113));
+    width: 100px;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-family: cursive;
+    cursor: pointer;
+
+}
+.deleteButton:hover{
+    opacity: 0.8;
+    box-shadow: 0px 0px 2px 2px black;
+}
+.my-Add-button:active{
+    opacity: 0.5;
+}
+.bod{
+    
+    height: 410px;
+    border: 4px solid black;
+    border-radius: 8px;
+    overflow-y: auto; /* Enables vertical scrolling */
+    overflow-x: hidden;
+    padding: 8px;place-items: top;
+    
+    
+}
+.theTodoElement{
+    font-size: 25px;
+    display: grid;
+    grid-template-columns: 410px 410px 180px;
+    margin-top: 10px;
+    justify-items: start;
+    align-items: center;
+    text-align: center;
+   
+}
+.checkBox{
+    margin: 0;
+    height:25px;
+    width: 25px;
+}

@@ -1,0 +1,223 @@
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, rgb(20, 2, 126),rgb(7, 0, 69));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+
+
+section{
+    border: none;
+    margin: 0;
+    padding: 80px;
+    height: 800px;
+    font-weight: bold;
+
+}
+#arrowUp{
+    color: white;
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    border-radius: 50%;
+    border: none;
+    background: linear-gradient(to bottom,blue,black);
+    cursor: pointer;
+    margin-bottom: 30px;
+    transition: 1s ease;
+    box-shadow: 0px 0px 8px 2px black;
+    
+}
+#arrowUp:hover{
+    box-shadow: 0px 0px 2px 2px white;
+}
+#arrowUp:active{
+    opacity: 0.5;
+}
+#arrowLink{
+    text-decoration: none;
+    color: white;
+}
+h1{
+    font-size:28px;
+    background: linear-gradient(to right, #ff0707, #ffc400,#ff08ff, #ffc400);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    
+}
+.my-icon{
+    text-decoration: none;
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 1.2em;
+    
+    background: linear-gradient(to right, #ff0707, #ffc400,#ff08ff, #ffc400);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    
+}
+.menu{
+    padding: 15px;
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    
+}
+.choice{
+    text-decoration: none;
+    color: white;
+    font-family: cursive;
+    background: linear-gradient(to right, #df0055, #c25801,#cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    
+
+
+}
+
+.gamecontainer{
+    width: 1050px;
+    font-family: "Permanent Marker",cursive;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 610px;
+    box-shadow: 0px 0px 8px 2px black;
+    background:linear-gradient(to bottom, rgb(0, 0, 146),rgb(128, 0, 142));
+    color:white;  
+    position: relative;
+
+}
+.last-game-container{
+    height: 750px;
+}
+
+.choose{
+    font-family: cursive;
+    margin-bottom: 4px;
+    height: 50px;
+    width: 150px;
+    border-radius: 15px;
+    border: none;
+    background: linear-gradient(to bottom, rgb(211, 25, 25),rgb(51, 2, 2));
+    color: white;
+    margin-right: 15px;
+    margin-left: 15px;
+    transition: 0.5s ease;
+    font-size: 20px;
+}
+.choose:hover{
+    opacity: 0.9;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 2px black;
+
+}
+.choose:active{
+    opacity: 0.5;
+}
+.cell-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 318px;
+    margin: auto;
+    background: linear-gradient(to bottom,rgb(255, 0, 0),rgb(175, 6, 6));
+   color: black;
+}
+.cell{
+
+    line-height: 75px;
+    height: 100px;
+    width: 100px;
+    border: 3px solid black;
+    cursor: pointer;
+    font-size: 80px;
+    box-shadow: 0px 0px 5px 2px rgb(0, 0, 0);
+}
+.reset-button,.start{
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+    background: rgb(134, 8, 8);
+    color: white;
+    font-family: cursive;
+    cursor: pointer;
+    transition: 0.5s ease;
+    bottom:8px;
+    margin: 18px;
+    
+}
+.start{
+    background-color: rgb(0, 47, 0);
+}
+.start:hover{
+    opacity: 0.8;
+    box-shadow: 0px 0px 5px 2px black;
+}
+.start:active{
+    background: white;
+    color: rgb(134, 8, 8);
+
+}
+.reset-button:hover{
+    opacity: 0.8;
+    
+    box-shadow: 0px 0px 5px 2px black;
+
+}
+.reset-button:active{
+    background: white;
+    color: rgb(134, 8, 8);
+}
+.three-button-container{
+    margin: auto;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.three-button{
+    background: linear-gradient(to bottom,rgb(3, 7, 225),black);
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    font-size: 150px;  
+    border: 3px solid black;
+    cursor: pointer;
+    text-align: center;
+}
+.three-button:hover{
+    opacity: 0.8;
+    box-shadow: 0px 0px 5px 2px black;
+
+}
+.three-button:active{
+    opacity: 0.5;
+}
+.three-button-message{
+   
+    font-size: 25px;
+    
+}
+.js-status{
+   margin: 0px;
+}
+
+.status-text{
+    margin-top: 4px;
+    margin-bottom: 0;
+}

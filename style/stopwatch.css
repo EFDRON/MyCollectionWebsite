@@ -1,0 +1,17 @@
+#stopwatchContainer{
+    background: linear-gradient(to right,rgb(154, 3, 3),rgb(17, 0, 76));
+    margin-top: 100px;
+    margin-left: 15px;
+    padding: 10px;
+    height: 350px;
+    border: 3px solid black;
+    font-family: consolas;
+    border-radius: 100px;
+    box-shadow: 0px 0px 8px 2px black;
+    width: 1000px;
+}
+
+#watchContent{
+    font-size: 150px;
+    margin-bottom: 25px;
+}

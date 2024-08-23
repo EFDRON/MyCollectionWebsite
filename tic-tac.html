@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac</title>
+    <link rel="stylesheet" href="style/tictac.css">
+    <link rel="stylesheet" href="style/todo.css">
+    <link rel="stylesheet" href="style/stopwatch.css">
+    <link rel="stylesheet" href="style/snake.css">
+    <link rel="stylesheet" href="style/navbar.css">
+
+
+
+</head>
+
+<body>
+    <nav>
+        <div class="icon">
+            <a href="#" class="my-icon">My Collection</a>  
+        </div>
+        <div class="menu">
+            <a href="#stopwatch" class="choice">Timer</a>
+            <a href="#todo" class="choice">ToDoList</a>
+            <a href="#rockpaper" class="choice" >Rock Paper Scissor</a>
+            <a href="#tictac" class="choice">TicTacToe</a>
+            <a href="#snake" class="choice">Snake</a> 
+            <a href="#PingPong" class="choice">PingPong</a>   
+        </div>
+    </nav>
+
+    <section id="stopwatch">
+        <div class="gamecontainer">
+            <h1>Stopwatch</h1>
+            <div id="stopwatchContainer">
+                <div id="watchContent">00:00:00</div>
+                <button class="choose" id="time-start-button">Start</button>
+                <button class="choose" id="time-pause-button">Pause</button>
+                <button class="choose" id="time-reset-button">Reset</button>
+            </div>
+
+        </div>
+    </section>
+    <section id="todo">
+        <div class="gamecontainer">
+            <h1>Todo List</h1>
+            <div class="my-todo">
+                <dvi class="head">
+                    <input placeholder="Input task here" class="the-input" id="todoInput" type="text">
+                    <input class="the-input" id="dateInput" type="date">
+                    <button class="my-Add-button" id="addButton">ADD</button>
+    
+                </dvi>
+                <div class="bod" id="todoList">
+                   
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="rockpaper">  
+          
+        <div class="gamecontainer">
+            <h1>Rock Paper Scissors</h1>
+            <button class="choose">Vs Computer</button>
+            <button class="choose">Vs Friend</button>
+            <div class="three-button-container">
+                <button class="three-button" id="rock">✊</button>
+                <button class="three-button" id="sissors" >✌️</button>
+                <button class="three-button" id='paper'>✋</button>
+            </div>
+            <p class="three-button-messageP"></p>
+            <div class="three-button-message">
+                <p class="js-status">Win: 0</p>
+                <p class="js-status">Lose: 0</p>
+                <p class="js-status">Draw: 0</p>
+            </div>  
+            <button class="reset-button" id="forRPS">Reset</button> 
+
+        </div>
+        
+
+    </section>
+
+    <section id="tictac">
+        <div class="gamecontainer">
+            <h1>Tic Tac Toe</h1>
+            
+            <button class="choose against-computer">Vs Computer</button>
+            <button class="choose against-friend">Vs Friend</button>
+            <p class="with"></p>
+
+            <div class="cell-container">
+                <div class="cell" cellIndex="0"></div>
+                <div class="cell" cellIndex="1"></div>
+                <div class="cell" cellIndex="2"></div>
+                <div class="cell" cellIndex="3"></div>
+                <div class="cell" cellIndex="4"></div>
+                <div class="cell" cellIndex="5"></div>
+                <div class="cell" cellIndex="6"></div>
+                <div class="cell" cellIndex="7"></div>
+                <div class="cell" cellIndex="8"></div>
+            </div>
+
+            <h1 attr="attribute" class="status-text"></h1>
+            <button class="reset-button" id="forTTT">Reset</button>
+        </div>
+
+    </section>
+
+    <section id="snake">
+        <div class="gamecontainer last-game-container">
+            <h1>Snake</h1>
+        
+            <canvas class="canvases" id="myCanvas" width="800" height="500">
+
+            </canvas>
+            <div class="scoreboard" id="scoreText">
+                SCORE: 0
+            </div>
+            <button class="start" id="gameStart">Start</button>
+            <button class="reset-button" id="snakeReset">Reset</button>
+        </div>
+        
+    </section>
+
+    <section id="PingPong">
+        <div class="gamecontainer last-game-container">
+            <h1>Ping Pong</h1>
+            <canvas class="canvases" id="pongCanvas" width="500" height="500">
+
+            </canvas>
+            <div class="scoreboard" id="pongScore">Player1 0:0 Player2</div>
+            <button class="start" id="pongStart">Start</button>
+            <button class="reset-button" id="pongReset">Reset</button>
+
+        </div>
+
+       
+    </section>
+    <button id="arrowUp"><a id="arrowLink" href="#stopwatch">&#x2191;</a></button>
+
+    <script src="script/navbar.js"></script>    
+    <script src="script/tictac.js"></script>
+    <script src="script/RockPaperScissors.js"></script>
+    <script src="script/todolist.js"></script>
+    <script src="script/stopwatch.js"></script>
+    <script src="script/snake.js"></script>
+    <script src="script/pong.js"></script>
+
+</body>
+</html>
